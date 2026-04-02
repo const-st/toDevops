@@ -49,4 +49,11 @@ git log origin/main..HEAD
 git log HEAD..origin/main
 git fetch origin
 
+git checkout - b
+git swithc -c
+
 git push -u origin feature-branch 
+
+git branch -d namebranch
+git push origin --delete nameBranch
+git log --oneline --graph --all -10 /// looks merge
