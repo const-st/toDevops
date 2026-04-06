@@ -24,6 +24,40 @@ DESCRIPTION
 
 Тестируем конфликт
 
+ --show-control-chars
+              show nongraphic characters as-is (the default, unless program is
+              'ls' and output is a terminal)
+
+       -Q, --quote-name
+              enclose entry names in double quotes
+
+       --quoting-style=WORD
+              use  quoting style WORD for entry names: literal, locale, shell,
+              shell-always,  shell-escape,  shell-escape-always,   c,   escape
+              (overrides QUOTING_STYLE environment variable)
+
+       -r, --reverse
+              reverse order while sorting
+
+       -R, --recursive
+              list subdirectories recursively
+
+       -s, --size
+              print the allocated size of each file, in blocks
+
+       -S     sort by file size, largest first
+
+       --sort=WORD
+              sort  by  WORD instead of name: none (-U), size (-S), time (-t),
+              version (-v), extension (-X)
+
+       --time=WORD
+              change the default of  using  modification  times;  access  time
+              (-u): atime, access, use; change time (-c): ctime, status; birth
+              time: birth, creation;
+
+
+
        -B, --ignore-backups
               do not list implied entries ending with ~
 
