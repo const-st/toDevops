@@ -22,6 +22,8 @@ DESCRIPTION
               with  -l,  scale  sizes  by  SIZE  when  printing  them;   e.g.,
               '--block-size=M'; see SIZE format below
 
+Тестируем конфликт
+
        -B, --ignore-backups
               do not list implied entries ending with ~
 
