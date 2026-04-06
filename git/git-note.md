@@ -32,17 +32,19 @@ mkdir -p ~/projects/gitlab
     path = ~/.gitconfig-gitlab
 
 and clone example
-git clone git@github.com:username/repo.git ~/projects/github/repo
+#### git clone git@github.com:username/repo.git ~/projects/github/repo
 
 git config --list --local
 git config --global --list
 
 git commit -m
-git commit -m "" --date="your format/ manual input" --author="name"
+git commit -m "" --date="your format manual input" --author="name"
 git commit -am ""
 
 git add -A && git commit -m "Major update" --date="2026-03-31"
+
 git commit --amend --date="2026-03-31 09:00:00" --no-edit - replace last commit
+
 git log --pretty=fuller
 
 git log origin/main..HEAD
@@ -56,4 +58,20 @@ git push -u origin feature-branch
 
 git branch -d namebranch
 git push origin --delete nameBranch
+
 git log --oneline --graph --all -10 /// looks merge
+
+git checkout -b feature
+
+git commit -m "commit 1"
+git commit -m "commit 2"
+
+git checkout main
+git pull origin main        # забрать чужие изменения
+git checkout feature
+git rebase main              # переложить свои коммиты поверх
+
+(fast-forward)
+git checkout main
+git merge feature
+git push origin main
